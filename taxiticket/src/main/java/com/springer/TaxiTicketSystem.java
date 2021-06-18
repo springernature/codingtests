@@ -10,8 +10,8 @@ public class TaxiTicketSystem {
 
         System.out.println("Taxi Ticket\n-----------");
 
-        String from = "MUMBAI";
-        String to = "PUNE";
+        String from = "GOA";
+        String to = "MUMBAI";
         int travellersCount = 2;
 
         System.out.println("Source: " + from);
@@ -25,7 +25,7 @@ public class TaxiTicketSystem {
 
         Integer distance = distances.get(from + "-" + to);
         if(distance == null){
-            distances.get(to + "-" + from);
+            distance = distances.get(to + "-" + from);
         }
 
         System.out.println("Kms: " + distance);
